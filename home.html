@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER SOCIETY | HOME</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Navigation bar-->
+    <header class="navbar">
+        <div class="nav-left">McGill Cyber Club</div>
+        <nav class="nav-links">
+          <a href="#top">Home</a>
+          <a href="#about-section">About</a>
+          <a href="#contact-section">Contact</a>
+        </nav>
+      </header>
+
+
+    <!-- MAiN heading and body-->
+    <center><br><br><br><br>
+    <p class="dark-back-title">CYBER SOCIETY</p>
+    
+    <br><br><br>
+    <main class="center-buttons">
+      <a href="#" class="btn" id="openSignIn">Sign In</a>
+      <a href="#" class="btn" id="openSignUp">Sign Up</a>
+
+    </main>
+
+    <br><br><br>
+    <a href="#about-section" class="down-arrow">
+      <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+      </svg>
+  </a></a>
+    
+  
+
+  <!--ABOUT section-->
+  <br><br>
+  <div class="bottom-section fade-slide-up" id="about-section">
+    <p class="dark-back-head">About</p>
+    <div class="container">
+      <p class="dark-back-body">
+        We are a student-led Cybersecurity Club focused on building skills, sharing knowledge, and growing a community around digital security.
+
+        From hands-on CTF (Capture the Flag) competitions to practical workshops and expert-led talks, we offer opportunities for all skill levels to learn about ethical hacking, online safety, and real-world security challenges.
+
+        Our goal is to make cybersecurity exciting and accessible—whether you're just getting started or looking to sharpen your skills. Join us to explore the world of hacking (the good kind), work on cool projects, and meet others who are just as passionate as you are.
+      </p><br><br>
+    </div>
+  </div>
+
+        <br><br>
+
+    <!--CONTACT section-->
+
+    <section class="contact-section" id="contact-section">
+      <h4>Contact</h4>
+      <h2>Get to know more about us</h2><br><br>
+      
+      <div class="contact-cards">
+        <!-- Instagram -->
+        <div class="contact-card">
+          <div class="icon"><a href="https://instagram.com/yourprofile" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30" />
+          </a>
+          </div>
+          <h3>Get regular updates</h3>
+          <p><a href="#">@cyberclubmcgill</a></p>
+        </div>
+    
+        <!-- Email -->
+        <div class="contact-card">
+          <div class="icon">✉️</div>
+          <h3>Email us At</h3>
+          <p><a href="mailto:">xyz@gmail.com</a></p>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="contact-card">
+          <div class="icon">in</div>
+          <h3>Let's Connect</h3>
+          <p><a href="#" target="_blank">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </section>
+  
+      </center>
+
+
+   
+<!-- Sign In Modal -->
+<div id="signInModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" id="closeSignIn">&times;</span>
+    <h2>Sign In</h2>
+    <form id="signInForm">
+      <label for="signin-username">Username</label>
+      <input type="text" id="signin-username" name="signin-username" placeholder="Enter your username" required>
+    
+      <label for="signin-password">Password</label>
+      <input type="password" id="signin-password" name="signin-password" placeholder="Enter your password" required>
+    
+      <p id="signin-error" style="color: #f44; display: none; font-size: 14px; margin-top: -10px;"></p>
+    
+      <button type="submit" class="btn">Sign In</button>
+    </form>
+    
+  </div>
+</div>
+
+
+<!-- Sign Up Modal -->
+<div id="signUpModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" id="closeSignUp">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signUpForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+    
+      <label for="university">University/School</label>
+      <input type="text" id="university" name="university" placeholder="McGill University" required>
+    
+      <label for="signup-username">Username</label>
+      <input type="text" id="signup-username" name="signup-username" placeholder="username123" required>
+    
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" name="signup-password" placeholder="********" required>
+    
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="********" required>
+    
+      <p id="password-error" style="color: #f44; display: none; font-size: 14px; margin-top: -10px;"></p>
+    
+      <button type="submit" class="btn">Register</button>
+    </form>
+    
+  </div>
+</div>
+
+
+<script src="sign.js"></script>
+
+</body>
+</html>

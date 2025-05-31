@@ -1,2 +1,1 @@
-# ctfwebsite
-website for capture the flag
+# frontend
